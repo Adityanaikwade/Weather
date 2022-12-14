@@ -12,7 +12,7 @@
         integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
     <style>
         body {
-            /* background-image: url("weather/snow.jpg"); */
+            /* background-image: url("snow.jpg"); */
             margin: 2px;
             background-size: 100vw 100vh;
             padding: 0;
@@ -93,7 +93,7 @@
 
         <div class="menubar">
             <div class="logo">
-                <img src="weather/download.png" alt="">
+                <img src="download.png" alt="">
                 <h4>Weather api</h4>
             </div>
             <div class="links">
@@ -239,7 +239,7 @@
                 // console.log(data.weather[0].main);
                 document.querySelector("#Weather").value = data.weather[0].main;
                 console.log(data.weather[0].main);
-                document.querySelector("body").style.backgroundImage = "url(" + `weather/${data.weather[0].main}` + ".jpg)";
+                document.querySelector("body").style.backgroundImage = "url(" + `${data.weather[0].main}` + ".jpg)";
                 // document.querySelector("body").style.backgroundColor = "blue";
                 // console.log("url(" + `weather / ${data.weather[0].main}` + ".jpg)");
             })
